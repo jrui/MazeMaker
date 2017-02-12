@@ -23,3 +23,12 @@ This algorithm is easily found online, the description above was copy from Wikip
 
 
 I hope that this might come in handy.
+
+
+<br>
+<strong>ScreenShots</strong>
+<br>
+<img src="https://raw.githubusercontent.com/CaptainJRoy/MazeMaker/master/Screenshot_1.png" data-canonical-src="https://raw.githubusercontent.com/CaptainJRoy/MazeMaker/master/Screenshot_1.png" width="900" height="450" />
+<br>
+<img src="https://raw.githubusercontent.com/CaptainJRoy/MazeMaker/master/Screenshot_2.png" data-canonical-src="https://raw.githubusercontent.com/CaptainJRoy/MazeMaker/master/Screenshot_2.png" width="420" height="210" />
+<img src="https://raw.githubusercontent.com/CaptainJRoy/MazeMaker/master/Screenshot_3.png" data-canonical-src="https://raw.githubusercontent.com/CaptainJRoy/MazeMaker/master/Screenshot_3.png" width="420" height="210" />
