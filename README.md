@@ -22,7 +22,8 @@ This algorithm is easily found online, the description above was copy from Wikip
 [https://en.wikipedia.org/wiki/Maze_generation_algorithm]
 
 
-I hope that this might come in handy.
+I hope that this might come in handy.<br>
+You can try this yourself in the following link: https://captainjroy.github.io/MazeMaker/
 
 
 <br>
