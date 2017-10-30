@@ -1,7 +1,7 @@
 # MazeMaker
 Random created maze (made in js with p5 library)
 
-I made this algorithm with the help of a video i saw.
+I made this algorithm with the help of a video i saw provided by the youtuber "The Coding Train".
 It's sole purpose is to generate random mazes, nothing else.
 To implement it i used the "Recursive Backtracker" algorithm, wich is the following:
 
@@ -24,6 +24,10 @@ This algorithm is easily found online, the description above was copy from Wikip
 
 I hope that this might come in handy.<br>
 You can try this yourself in the following link: https://captainjroy.github.io/MazeMaker/
+
+If you have any sugestions feel free to let me know!
+Have a nice day!
+- CaptainJRoy
 
 
 <br>
