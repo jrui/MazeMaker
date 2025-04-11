@@ -1,7 +1,8 @@
 let cols, rows;
-let grid = [];
-let current;
-let stack = [];
+let grid = [], stack = [];
+let current, lastCell;
+let currentDistance = 0, maxDistance = 0;
+
 const cellSize = 30;
 
 
@@ -20,6 +21,7 @@ function setup() {
   }
 
   current = grid[0];
+  lastCell = current;
 }
 
 
@@ -30,15 +32,34 @@ function draw() {
   }
 
   current.visited = true;
-  current.highlight();
+  grid[0].highlightStart();
+  if (current !== grid[0]) current.highlight();
+  else {
+    lastCell.highlightEnd();
+    if (maxDistance !== 0) {
+      console.log("Max distance: " + maxDistance);
+      alert("Maze solution steps: " + maxDistance + "\nTotal Cells: " + grid.length);
+      noLoop();
+    }
+  }
+
   let next = current.checkNeighbors();
   if (next) {
     next.visited = true;
     stack.push(current);
     removeWalls(current, next);
     current = next;
+
+    currentDistance++;
+    if (currentDistance > maxDistance) {
+      maxDistance = currentDistance;
+      lastCell = current;
+    }
   }
-  else if(stack.length > 0) current = stack.pop();
+  else if(stack.length > 0) {
+    currentDistance--;
+    current = stack.pop();
+  }
 }
 
 

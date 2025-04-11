@@ -40,6 +40,34 @@ class Cell {
         fill(0, 200, 255, 100);
         rect(x, y, this.cellSize, this.cellSize);
     }
+
+
+    highlightStart() {
+        let x = this.i * this.cellSize;
+        let y = this.j * this.cellSize;
+        noStroke();
+        fill(0, 255, 0, 100);
+        rect(x, y, this.cellSize, this.cellSize);
+        // add start black text to box
+        fill(0);
+        textSize(8);
+        textAlign(CENTER, CENTER);
+        text("START", x + this.cellSize / 2, y + this.cellSize / 2);
+    }
+
+
+    highlightEnd() {
+        let x = this.i * this.cellSize;
+        let y = this.j * this.cellSize;
+        noStroke();
+        fill(255, 0, 0, 100);
+        rect(x, y, this.cellSize, this.cellSize);
+        // add start black text to box
+        fill(0);
+        textSize(8);
+        textAlign(CENTER, CENTER);
+        text("END", x + this.cellSize / 2, y + this.cellSize / 2);
+    }
   
 
     show() {
